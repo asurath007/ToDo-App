@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">ToDO List App</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="add_your_first_task">Add your first Task</string>
+    <string name="enter_your_task">Enter your task</string>
+    <string name="add_your_task_here">Add your Task here</string>
+    <string name="enter_task_details">Enter Task Details</string>
+    <string name="save">Save</string>
+    <string name="title_activity_list">ListActivity</string>
+    <string name="task_title">Task Title</string>
+    <string name="task_details">Task Details</string>
+    <string name="date">Date:</string>
+    <string name="are_you_sure">Are you Sure?</string>
+    <string name="no">NO</string>
+    <string name="yes">yes</string>
+</resources>

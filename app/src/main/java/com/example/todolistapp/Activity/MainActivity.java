@@ -7,8 +7,10 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
@@ -36,6 +38,23 @@ public class MainActivity extends AppCompatActivity {
         db = new dbHandler(this);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+//        final ImageView imageView = findViewById(R.id.imageView);
+//        imageView.startAnimation(AnimationUtils.loadAnimation(this, R.anim.fade_in));
+//        new Handler().postDelayed(new Runnable() {
+//            @Override
+//            public void run() {
+//                imageView.startAnimation(AnimationUtils.loadAnimation(MainActivity.this, R.anim.fade_out));
+//                new Handler().postDelayed(new Runnable() {
+//                    @Override
+//                    public void run() {
+//                        imageView.setVisibility(View.GONE);
+//                        startActivity(new Intent(MainActivity.this, MainActivity.class));
+//                        finish();
+//                    }
+//                },500);
+//            }
+//        },1500);
 
        byPassActivity();
 

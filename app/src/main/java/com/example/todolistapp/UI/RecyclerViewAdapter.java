@@ -8,6 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.TextView;
 
@@ -71,6 +72,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
         public Button btn_delete;
         public int id;
 
+
         public ViewHolder(View view, Context ctx) {
             super(view);
 
@@ -81,6 +83,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
             task_dateAdded = view.findViewById(R.id.tv_date);
             btn_edit = view.findViewById(R.id.btn_edit);
             btn_delete = view.findViewById(R.id.btn_delete);
+
 
 
             btn_edit.setOnClickListener(this);

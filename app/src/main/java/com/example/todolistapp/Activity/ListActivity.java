@@ -19,6 +19,7 @@ import android.os.Handler;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.EditText;
 
 import com.example.todolistapp.R;
@@ -39,6 +40,7 @@ public class ListActivity extends AppCompatActivity {
     private AlertDialog dialog;
     private EditText et_taskTitle;
     private EditText et_taskDetail;
+   
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

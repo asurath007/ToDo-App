@@ -39,22 +39,23 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-//        final ImageView imageView = findViewById(R.id.imageView);
-//        imageView.startAnimation(AnimationUtils.loadAnimation(this, R.anim.fade_in));
-//        new Handler().postDelayed(new Runnable() {
-//            @Override
-//            public void run() {
-//                imageView.startAnimation(AnimationUtils.loadAnimation(MainActivity.this, R.anim.fade_out));
-//                new Handler().postDelayed(new Runnable() {
-//                    @Override
-//                    public void run() {
-//                        imageView.setVisibility(View.GONE);
+
+        final ImageView imageView = findViewById(R.id.imageView);
+        imageView.startAnimation(AnimationUtils.loadAnimation(this, R.anim.fade_in));
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                imageView.startAnimation(AnimationUtils.loadAnimation(MainActivity.this, R.anim.fade_out));
+                new Handler().postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        imageView.setVisibility(View.GONE);
 //                        startActivity(new Intent(MainActivity.this, MainActivity.class));
 //                        finish();
-//                    }
-//                },500);
-//            }
-//        },1500);
+                    }
+                },500);
+            }
+        },1500);
 
        byPassActivity();
 
